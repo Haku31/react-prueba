@@ -1,0 +1,104 @@
+@import 'vars';
+
+#imge {
+	width: 100%;
+	height: 350px;
+	padding: 0%;
+	@media (max-width: 400px) {
+		min-width: 250px;
+	}
+}
+
+.container{
+	padding-left: 0% !important;
+	padding-right: 0% !important;
+	max-width: 200px !important;
+	padding: 0%;
+	border: solid 1px #E6E6E6;
+	background-color: #E6E6E6;
+}
+.product-info {
+	display: flex;
+	align-items: center;
+	margin-top: 0px;
+    text-align: left;
+    margin-left: 10px;
+}
+#parrafo{
+	font-size: 15px;
+	@media (max-width: 400px) {
+		min-width: 250px;
+		font-size: 10px;
+	}
+}
+
+.Shopcard{
+    background-color: #ffffff;
+    max-width: 100%;
+    max-height: 60%;
+    
+}
+.product button{
+    width: 90%;
+    margin: 10px;
+    justify-content: center;
+    font-size: small;
+    padding-right: 30px;
+    background-color: black;
+    color: #fdfdfd;
+    border: 0;
+	@media (max-width: 400px) {
+		min-width: 230px;
+		font-size: 10px;
+	}
+}
+#carrito{
+	fill: #fdfdfd !important;
+}
+  .blackbg{
+	background-color: black;
+  }
+.product figure img {
+	path {
+		fill: currentColor !important;
+	}
+    padding-left: 0%;
+    background-color: rgb(7, 7, 7);
+    width: 30px;
+    height: 30px;
+}
+.product figure {
+	margin: 0;
+}
+.product figure button svg {
+	width: 30px;
+	height: 30px;
+    margin-right: 5px;
+    border-radius: 0%;
+    color: white;
+}
+.product-info div p:nth-child(1) {
+	font-weight: bold;
+	font-size: var(--md);
+	margin-top: 0;
+	margin-bottom: 4px;
+}
+.product-info div p:nth-child(2) {
+	font-size: var(--sm);
+    font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #5B17AA;
+}
+@media (max-width: 400px) {
+	.cards-container {
+		grid-template-columns: repeat(auto-fill, 340px);
+	}
+	.Shopcard {
+		width: 140px;
+	}
+	.Shopcard img {
+		width: 140px;
+		height: 140px;
+	}
+}
